@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.center {
+    left: calc(10%);
+    right: calc(10%);
+}
