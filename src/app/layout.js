@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="mentores, mentoría, aprendizaje, desarrollo profesional" />
       </head>
       <body className={inter.className}>
-        <div className={`w-[100%] h-[100vh] bg-black opacity-30 absolute top-[70px] left-0 hidden ${showNav ? 'md:block' : 'md:hidden'}`}></div>
-        <div className="w-full text-black flex flex-row justify-between items-center py-[10px] px-[20px] h-[70px] relative shadow-lg">
+        <div className={`w-[100%] h-[100vh] bg-black opacity-30 absolute top-[70px] left-0 hidden z-50 ${showNav ? 'md:block' : 'md:hidden'}`}></div>
+        <div className="w-full text-black flex flex-row justify-between items-center py-[10px] px-[20px] h-[70px] relative shadow-lg z-50">
           <a href="/" className="flex flex-row justify-center items-center">
             <img
               src="/book.png"
@@ -38,17 +38,13 @@ export default function RootLayout({ children }) {
             </h1>
           </a>
           <nav className={`bg-zinc-100 md:bg-transparent absolute top-0 left-0 w-[60vw] h-[100vh] p-[10px] md:relative md:default md:block md:w-auto md:h-auto z-[100] md:z-0 ${openNavBar ? 'flex' : 'hidden'}`}>
-            <ul className={`flex flex-col gap-[10px] md:flex-row`}>
-              <li className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">
-                <a href="/">Inicio</a>
+            <ul className={`flex flex-col gap-[10px] md:flex-row md:items-center`}>
+              <li>
+                <a href="/" className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">Inicio</a>
               </li>
-              <li 
-                className="py-[5px] px-[10px] md:hover:border-b hover:border-zinc-500"
-                onMouseEnter={() => setShowNav(true)}
-                onMouseLeave={() => setShowNav(false)}
-              >
+              <li onMouseEnter={() => setShowNav(true)} onMouseLeave={() => setShowNav(false)}>
                 <button
-                  className="flex flex-row justify-center items-center gap-[5px]"
+                  className="flex flex-row justify-center items-center gap-[5px] py-[5px] px-[10px] md:hover:border-b hover:border-zinc-500"
                 >
                   Recursos
                   <img
@@ -88,11 +84,11 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
               </li>
-              <li className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">
-                <a href="/site/sobre-nosotros">Nosotros</a>
+              <li>
+                <a href="/site/sobre-nosotros" className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">Nosotros</a>
               </li>
-              <li className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">
-                <a href="/blog">Blog</a>
+              <li>
+                <a href="/blog" className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">Blog</a>
               </li>
             </ul>
           </nav>
@@ -123,7 +119,7 @@ export default function RootLayout({ children }) {
                   </a>
                   <a href="/biblioteca" className="hover:bg-zinc-800 py-[5px] px-[10px] w-full rounded-[5px] my-[5px]  text-zinc-300 flex items-center gap-[5px]">
                       <img src="/library.png" alt="Biblioteca" className="max-w-[20px]" />
-                      Bilbioteca
+                      Biblioteca
                   </a>
                   <a href="/dashboard/seguridad" className="hover:bg-zinc-800 py-[5px] px-[10px] w-full rounded-[5px] my-[5px]  text-zinc-300 flex items-center gap-[5px]">
                       <img src="/lock.png" alt="Configuraciones" className="max-w-[20px]" />
@@ -135,7 +131,9 @@ export default function RootLayout({ children }) {
                   </a>
                 </div>
             </button>
-            <img src="/menu.png" alt="Desplegar navegación" className="block md:hidden max-w-[40px] cursor-pointer" onClick={HandleOpenNavBar} />
+            <button onClick={HandleOpenNavBar}>
+              <img src="/menu.png" alt="Desplegar navegación" className="block md:hidden max-w-[40px] cursor-pointer" />
+            </button>
           </div>
         </div>
         {children}

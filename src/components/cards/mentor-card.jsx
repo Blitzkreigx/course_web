@@ -8,9 +8,7 @@ export function MentorCard() {
                 <div className="px-[20px] py-[20px]">
                   <h3 className="text-2xl pb-[10px]">Juan Pérez</h3>
                   <p className="text-zinc-600 pb-[10px]">Experto en desarrollo web con más de 10 años de experiencia.</p>
-                    <button className="bg-zinc-900 hover:bg-black text-white py-[8px] px-[16px] rounded-[5px] ">
-                      <a href="/site/mentor">Ver Perfil</a>
-                    </button>
+                    <a href="/mentores/mentor" className="bg-zinc-900 hover:bg-black text-white py-[8px] px-[16px] rounded-[5px]">Ver Perfil</a>
                 </div>
             </div>
         </>

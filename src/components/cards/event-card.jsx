@@ -11,9 +11,7 @@ export default function EventCard() {
                 </div>
                 <div className="flex flex-row justify-between items-center">
                     <p>20 de Junio, 2023</p>
-                    <button className="py-[5px] px-[10px] bg-zinc-900 hover:bg-black text-white rounded-[5px]">
-                        <a href="/blog/eventos">Registrarse</a>
-                    </button>
+                    <a href="/blog/eventos" className="py-[5px] px-[10px] bg-zinc-900 hover:bg-black text-white rounded-[5px]">Registrarse</a>
                 </div>
             </div>
         </>

@@ -6,3 +6,7 @@
 .height {
     min-height: calc(100vh - 70px);
 }
+
+.height-scroll {
+    max-height: calc(100vh - 70px);
+}

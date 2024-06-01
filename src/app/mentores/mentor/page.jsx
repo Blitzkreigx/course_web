@@ -18,18 +18,10 @@ export default function Mentor() {
                         </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-[25px] py-[10px]">
-                        <div className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">
-                            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                        </div>
-                        <div className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">
-                            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                        </div>
-                        <div className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">
-                            <a href="https://www.youtube.com" target="_blank">YouTube</a>
-                        </div>
-                        <div className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">
-                            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-                        </div>
+                        <a href="https://www.facebook.com" target="_blank" className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">Facebook</a>
+                        <a href="https://www.instagram.com" target="_blank" className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">Instagram</a>
+                        <a href="https://www.youtube.com" target="_blank" className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">YouTube</a>
+                        <a href="https://www.linkedin.com/" target="_blank" className="border-[1px] border-black rounded-[2px] py-[6px] px-[12px] cursor-pointer hover:bg-zinc-200">Linkedin</a>
                     </div>
                     <div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus a harum quisquam illum in expedita libero magni laborum voluptatibus exercitationem unde consectetur voluptate eaque est deserunt, voluptatem ducimus ut labore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, minima.</p>
@@ -54,7 +46,9 @@ export default function Mentor() {
                 <div className={`w-full h-screen bg-black opacity-30 absolute top-0 left-0 ${contactMentor ? 'block' : 'hidden'}`}></div>
                 <div className={`p-[25px] w-[90%] md:w-[60%] min-h-[70%] border-[1px] border-zinc-400 rounded-[10px] absolute bg-white left-[5%] right-[5%] md:left-[20%] md:right-[20%] top-[15%] bottom-[15%] z-[100] ${contactMentor ? 'block' : 'hidden'}`}>
                     <div className="flex justify-end items-center">
-                        <img src="/x.png" alt="Cerrar contacto con mentor" className="max-w-[25px] cursor-pointer" onClick={() => setContactMentor(false)} />
+                        <button onClick={() => setContactMentor(false)}>
+                            <img src="/x.png" alt="Cerrar contacto con mentor" className="max-w-[25px] cursor-pointer" />
+                        </button>
                     </div>
                     <form className="flex flex-col justify-center">
                       <label htmlFor="name" className="py-[5px] cursor-pointer">Nombre Completo</label>

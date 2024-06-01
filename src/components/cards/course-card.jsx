@@ -8,9 +8,7 @@ export function FreeCourseCard() {
                 <div className="px-[20px] py-[20px]">
                   <h3 className="text-2xl pb-[10px]">Introducción a HTML y CSS</h3>
                   <p className="text-zinc-600 pb-[10px]">Aprende los conceptos básicos de HTML y CSS para crear páginas web.</p>
-                  <button className="bg-zinc-900 hover:bg-black text-white py-[8px] px-[16px] rounded-[5px]">
-                    <a href="/cursos">Acceder</a>
-                  </button>
+                  <a href="/cursos/introduccion-a-html" className="bg-zinc-900 hover:bg-black text-white py-[8px] px-[16px] rounded-[5px]">Acceder</a>
                 </div>
             </div>
         </>
@@ -29,9 +27,7 @@ export function PaymentCourseCard() {
                   <p className="text-zinc-600 pb-[10px]">Aprende técnicas avanzadas de desarrollo web, incluyendo frameworks, APIs y despliegue.</p>
                   <div className="flex flex-row justify-between items-center">
                     <p><strong>$199</strong></p>
-                    <button className="bg-zinc-900 hover:bg-black text-white py-[8px] px-[16px] rounded-[5px]">
-                      <a href="/cursos">Inscribirme</a>
-                    </button>
+                    <a href="/cursos/introduccion-a-html" className="bg-zinc-900 hover:bg-black text-white py-[8px] px-[16px] rounded-[5px]">Inscribirme</a>
                   </div>
                 </div>
             </div>
