@@ -1,8 +1,8 @@
 export default function Pefil() {
     return (
         <>
-            <section className="md:col-span-8 col-span-10">
-                <div className="flex flex-col justify-center items-start border-[1px] border-zinc-300 p-[20px] h-full">
+            <section className="">
+                <div className="flex flex-col justify-between items-start border-[1px] border-zinc-300 p-[20px] h-full height">
                     <div className="w-full h-full">
                         <div className="flex flex-col justify-center items-start gap-[5px] my-[15px]">
                             <div className="flex justify-start items-center gap-[15px] mb-[25px]">
@@ -11,7 +11,7 @@ export default function Pefil() {
                                 </div>
                                 <div>
                                     <h1 className="text-lg"><b>Cristian Bautista</b></h1>
-                                    <h2 className="text-zinc-600">Se unió del 15 de junio del 2024</h2>
+                                    <h2 className="text-zinc-600"><time datetime="2024/06/15"></time>Se unió del 15 de junio del 2024</h2>
                                 </div>
                             </div>
                             <div>

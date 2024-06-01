@@ -1,9 +1,9 @@
 'use client'
 
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { metadata } from "@/metadata";
 import { useState } from "react";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,15 +11,21 @@ export default function RootLayout({ children }) {
   const [showNav, setShowNav] = useState(false)
   const [showBarProfile, setShowBarProfile] = useState(false)
   const [openNavBar, setOpenNavBar] = useState(false)
-
+  
   const HandleOpenNavBar = () => {
     setOpenNavBar(!openNavBar);
   }
 
   return (
     <html lang="es">
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content="mentores, mentoría, aprendizaje, desarrollo profesional" />
+      </head>
       <body className={inter.className}>
-        <div className="w-full text-black flex flex-row justify-between items-center py-[10px] px-[20px] h-[80px] relative shadow-lg">
+        <div className={`w-[100%] h-[100vh] bg-black opacity-30 absolute top-[70px] left-0 hidden ${showNav ? 'md:block' : 'md:hidden'}`}></div>
+        <div className="w-full text-black flex flex-row justify-between items-center py-[10px] px-[20px] h-[70px] relative shadow-lg">
           <a href="/" className="flex flex-row justify-center items-center">
             <img
               src="/book.png"
@@ -31,7 +37,6 @@ export default function RootLayout({ children }) {
               Course Platform
             </h1>
           </a>
-          {/* Verificar las posiciones del nav */}
           <nav className={`bg-zinc-100 md:bg-transparent absolute top-0 left-0 w-[60vw] h-[100vh] p-[10px] md:relative md:default md:block md:w-auto md:h-auto z-[100] md:z-0 ${openNavBar ? 'flex' : 'hidden'}`}>
             <ul className={`flex flex-col gap-[10px] md:flex-row`}>
               <li className="py-[5px] px-[10px] hover:border-b hover:border-zinc-500">
@@ -53,7 +58,7 @@ export default function RootLayout({ children }) {
                   />
                 </button>
                 <div 
-                  className={`bg-zinc-100 text-zinc-800 flex flex-col justify-center items-start gap-[15px] pl-[20px] rounded-10px md:fixed md:top-[60px] md:w-[76%] md:h-[40%] md:flex-row md:justify-between md:gap-[50px] md:py-[10px] md:px-[50px] md:left-[12%] md:right-[12%] ${showNav ? 'flex' : 'hidden'}`} 
+                  className={`bg-zinc-100 text-zinc-800 flex flex-col justify-center items-start gap-[15px] pl-[20px] rounded-10px md:fixed md:top-[60px] md:w-[100%] md:h-[50%] left-0 md:flex-row md:justify-around md:gap-[50px] md:py-[10px] md:px-[50px] ${showNav ? 'flex' : 'hidden'}`} 
                 >
                   <div>
                     <h2 className="text-lg mb-[15px] text-black">Categorías</h2>
@@ -120,13 +125,17 @@ export default function RootLayout({ children }) {
                       <img src="/library.png" alt="Biblioteca" className="max-w-[20px]" />
                       Bilbioteca
                   </a>
+                  <a href="/dashboard/seguridad" className="hover:bg-zinc-800 py-[5px] px-[10px] w-full rounded-[5px] my-[5px]  text-zinc-300 flex items-center gap-[5px]">
+                      <img src="/lock.png" alt="Configuraciones" className="max-w-[20px]" />
+                      Seguridad
+                  </a>
                   <a href="" className="hover:bg-zinc-800 py-[5px] px-[10px] w-full rounded-[5px] my-[5px]  text-zinc-300 flex items-center gap-[5px]">
                       <img src="/logout.png" alt="Cerrar sesión" className="max-w-[20px]" />
                       Cerrar sesión
                   </a>
                 </div>
             </button>
-            <img src="/menu-2.png" alt="Desplegar navegación" className="block md:hidden max-w-[40px] cursor-pointer" onClick={HandleOpenNavBar} />
+            <img src="/menu.png" alt="Desplegar navegación" className="block md:hidden max-w-[40px] cursor-pointer" onClick={HandleOpenNavBar} />
           </div>
         </div>
         {children}

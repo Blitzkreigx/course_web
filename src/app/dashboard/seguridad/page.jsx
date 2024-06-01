@@ -1,8 +1,8 @@
 export default function Seguridad() {
     return (
         <>
-            <section className="md:col-span-8 col-span-10">
-                <div className="flex flex-col justify-center items-start border-[1px] border-zinc-300 p-[20px] h-full">
+            <section className="">
+                <div className="flex flex-col justify-between items-start border-[1px] border-zinc-300 p-[20px] h-full height">
                     <div className="w-full h-full">
                         <div className="flex flex-col justify-center items-start gap-[5px] my-[15px]">
                             <h2 className="text-3xl">Autenticación de dos factores</h2>

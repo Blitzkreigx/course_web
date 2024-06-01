@@ -4,7 +4,7 @@ export default function Page() {
             <section className="px-[10px] py-[25px] max-w-[1000px] mx-auto">
                 <div className="py-[25px] mx-auto text-center">
                     <h2 className="text-3xl"><strong>Lorem, ipsum dolor</strong></h2>
-                    <h3 className="text-zinc-700"><time datetime="01/06/2024">1 Mayo 2024</time></h3>
+                    <h3 className="text-zinc-700"><time datetime="2024-05-01">1 Mayo 2024</time></h3>
                 </div>
                 <div className="flex flex-col gap-[15px]">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet omnis maxime quidem dolorem ut voluptatum, natus corrupti distinctio quia, blanditiis amet commodi quaerat cum quos unde repellendus quod ab veniam.</p>

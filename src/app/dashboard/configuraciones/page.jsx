@@ -1,11 +1,11 @@
 export default function User() {
     return (
         <>
-            <section className="md:col-span-8 col-span-10">
-                <div className="flex flex-col justify-center items-start border-[1px] border-zinc-300 p-[20px]">
+            <section className="">
+                <div className="flex flex-col justify-between items-start border-[1px] border-zinc-300 p-[20px]">
                     <div className="py-[25px] w-full">
-                        <h2 className="text-3xl">Perfil de Usuario</h2>
-                        <p>Actualiza la información de tu perfil</p>
+                        <h2 className="text-3xl">Perfil de usuario</h2>
+                        <p>Actualize la información de su perfil</p>
                     </div>
                     <div className="w-full">
                         <div className="flex flex-col justify-center items-start gap-[5px] my-[15px]">
@@ -40,10 +40,10 @@ export default function User() {
                         <button>Guardar Cambios</button>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-start border-[1px] border-zinc-300 p-[20px]">
+                <div className="flex flex-col justify-between items-start border-[1px] border-zinc-300 p-[20px]">
                     <div className="py-[25px] w-full">
-                        <h2 className="text-3xl">Actualiza la Contraseña</h2>
-                        <p>Actualiza tu contraseña</p>
+                        <h2 className="text-3xl">Contraseña</h2>
+                        <p>Actualize su contraseña</p>
                     </div>
                     <div className="w-full">
                         <div className="flex flex-col justify-center items-start gap-[5px] my-[15px]">

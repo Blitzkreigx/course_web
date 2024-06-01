@@ -1,4 +1,4 @@
 export const metadata = {
-    title: "Mentorizer",
-    description: "Conecting with mentor's",
+    title: "Course Platform",
+    description: "Plataforma de cursos y mentorías con expertos 100% mexicanos",
 };

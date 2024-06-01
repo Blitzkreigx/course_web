@@ -62,7 +62,7 @@ export default function Mentor() {
                       <label htmlFor="email" className="py-[5px] cursor-pointer">Correo Electronico</label>
                       <input type="email" id="email" name="email" placeholder="Escriba su correo electronico" required className="w-full border-[1px] border-zinc-600 py-[10px] px-[5px] mb-[15px] rounded-[5px]" />
                       <label htmlFor="message" className="py-[5px] cursor-pointer">Mensaje</label>
-                      <textarea id="message" name="message" placeholder="Escriba su mensaje" className="w-full h-[100px] border-[1px] border-zinc-600 py-[10px] px-[5px] resize-none mb-[20px] rounded-[5px]"></textarea>
+                      <textarea id="message" name="message" placeholder="Escriba su mensaje" required className="w-full h-[100px] border-[1px] border-zinc-600 py-[10px] px-[5px] resize-none mb-[20px] rounded-[5px]"></textarea>
                       <input type="submit" value="Enviar" className="w-full bg-zinc-900 hover:bg-zinc-950 text-white py-[10px] rounded-[5px] text-lg cursor-pointer" />
                     </form>
                 </div>
