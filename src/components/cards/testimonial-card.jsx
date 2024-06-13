@@ -12,7 +12,7 @@ export default function TestimonialCard() {
                     </div>
                 </div>
                 <div>
-                    <p>"The platform has been a game-changer for our team. The analytics and reporting features are incredibly valuable."</p>
+                    <p>The platform has been a game-changer for our team. The analytics and reporting features are incredibly valuable.</p>
                 </div>
             </div>
         </>
