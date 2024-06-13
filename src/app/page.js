@@ -40,7 +40,7 @@ export default function Home() {
       <section className="px-[10px] py-[25px]">
         <div className="pb-[20px] md:ml-[30px]">
             <h2 className="text-2xl">Frequently Asked Questions</h2>
-            <p className="text-zinc-600">Here are some of the most common questions we receive from our students. If you have any other questions, please don't hesitate to contact us.</p>
+            <p className="text-zinc-600">Here are some of the most common questions we receive from our students. If you have any other questions, please dont hesitate to contact us.</p>
         </div>
         <div>
             <FAQCard />
