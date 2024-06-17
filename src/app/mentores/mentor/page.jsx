@@ -13,7 +13,7 @@ export default function Mentor() {
                             CB
                         </div>
                         <div>
-                            <h1 className="text-lg"><b>Cristian Bautista</b></h1>
+                            <h1 className="text-lg"><b>Juan Pérez</b></h1>
                             <h2 className="text-zinc-600">Especialista en Ciberseguridad</h2>
                         </div>
                     </div>

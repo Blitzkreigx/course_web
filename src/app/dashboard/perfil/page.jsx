@@ -10,7 +10,7 @@ export default function Pefil() {
                                     CB
                                 </div>
                                 <div>
-                                    <h1 className="text-lg"><b>Cristian Bautista</b></h1>
+                                    <h1 className="text-lg"><b>Joaquín Guzmán</b></h1>
                                     <h2 className="text-zinc-600"><time datetime="2024/06/15"></time>Se unió del 15 de junio del 2024</h2>
                                 </div>
                             </div>
